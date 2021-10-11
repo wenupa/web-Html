@@ -10,7 +10,7 @@
     <!-- JavaScript Bundle with Popper -->
     <title>Hello, world!</title>
   </head>
-  <body>
+  <body style="background-color:white;opacity:0.9;">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
         <a class="navbar-brand" href="#">Navbar</a>
@@ -319,53 +319,59 @@
 <html>
 <head>
 	<title></title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap" rel="stylesheet">
 </head>
 <body bgcolor="green">
-	<center><h1><i><u>Registration Form</u></i></h1></center>
+  <div style="color:black;font-family: 'Noto Sans Mono', monospace;" id="register_title">
+	<center><h1>Registration Form</h1></center>
+</div>
+<div id="form_manag" style="background-color:#f6aa1c;margin:10px;padding:20px;">
+	<form name="form" style="padding:20px;color:black;">
 
-	<form name="form">
-   
-        <table>
+        <table style="margin:5px;">
             <tr>
                 <td>Name</td>
-                <td><input type="text" name="fname" ></td>
+                <td><input style="border:1px solid yellow;border-radius:5px;" type="text" name="fname" ></td>
             </tr>
             <tr>
                 <td>Telephone NO:</td>
-                <td><input type="text" name="telephoneno"></td>
+                <td><input style="border:1px solid yellow;border-radius:5px;" type="text" name="telephoneno"></td>
                 </tr>
                 <tr>
                     <td>Address</td>
-                    <td><input type="text" name="address" ></td>
+                    <td><input style="border:1px solid yellow;border-radius:5px;" type="text" name="address" ></td>
                 </tr>
                 <tr>
                     <td>How would like us to contact you</td>
-                    <td>Telephone<input type="radio" name="contactusbtn"> Letter<input type="radio" name="contactusbtn"> </td>
+                    <td>Telephone<input style="border:1px solid black;" type="radio" name="contactusbtn"> Letter<input type="radio" name="contactusbtn"> </td>
                  </tr>
                 <tr>
                  <td>Do you Like to receive a newsletter?</td>
-                     <td><input type="checkbox" name="agree"></td>
+                     <td><input style="border:1px solid black;" type="checkbox" name="agree"></td>
                      </tr>
 
-                     
+
                         <td colspan="2">
-                        <input type="button" name="Send" value="Send" onclick="checkform()">
-                        <input type="button" name="cancel" value="cancel">
+                        <input style="border:1px solid yellow;border-radius:5px;" type="button" name="Send" value="Send" onclick="checkform()">
+                        <input style="border:1px solid yellow;border-radius:5px;" type="button" name="cancel" value="cancel">
                         </td>
 
-                        
 
-                
 
-                
 
-                
+
+
+
+
         </table>
- 
-    
-</form>
 
-	<center><a href="https://www.nsbm.ac.lk/">NSBM Web</a></center>
+
+</form>
+</div>
+
+	<center><a style="text-decoration:none;" href="https://www.nsbm.ac.lk/">NSBM Web</a></center>
 
 </body>
 </html>
